@@ -1,0 +1,66 @@
+.header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 60px;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 9999;
+}
+.page-title {
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+}
+.page-nav > li {
+    margin-left: 30px;
+    font-size: 18px;
+}
+.album-link {
+    position: relative;
+}
+.album-nav {
+    display: none;
+    width: 243px;
+    position: absolute;
+    top: 50px;
+    left: -84px;
+    font-size: 14px;
+}
+.album-nav > li {
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #FFF;
+}
+.album-nav > li > a {
+    display: block;
+}
+.keyvisual-wrap {
+    opacity: 0.8;
+}
+.keyvisual-wrap > li {
+    display: none;
+}
+.keyvisual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+@media(max-width: 2050px){
+    .keyvisual {
+        width: 2050px;
+        height: 100%;
+    }
+}
+
+/******************
+共通
+******************/
+.font-white {
+    color: #FFF;
+}
+.flex-wrap {
+    display: flex;
+    align-items: center;
+}
