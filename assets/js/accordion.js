@@ -12,13 +12,16 @@ BIKE.TRAJECTORY.ACCORDION = {
     setParamerters : function(){
         this.$trigger = $('.album-link').children('a');
         this.$contents = $('.album-nav');
+        this.$contents_wrap = $('.contents_wrapper');
+        this.$img_wrap = $('.image-wrap');
     },
 
     bindEvent : function(){
         var myself = this;
 
         this.$trigger.on('mouseover', this.showContents.bind(this));
-        this.$window.on('click', this.hideContents.bind(this));
+        this.$contents_wrap.on('click', this.hideContents.bind(this));
+        this.$img_wrap.on('click', this.hideContents.bind(this));
     },
 
     showContents : function(){
