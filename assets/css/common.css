@@ -60,6 +60,11 @@
 .contents_wrapper {
     background-color: #000000;
 }
+.brand {
+    font-size: 45px;
+    letter-spacing: 0.3em;
+    font-family: 'Orbitron', sans-serif;
+}
 .font-white {
     color: #FFF;
 }
