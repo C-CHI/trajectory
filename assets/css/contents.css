@@ -4,14 +4,21 @@
 .contents_wrapper {
     padding: 60px;
     padding-top: 148px;
+    text-align: center;
 }
 .content-link {
     max-width: 1145px;
     margin: 0 auto;
+    padding-top: 70px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .content-link > li {
     width: 350px;
     margin-bottom: 30px;
+}
+.brand {
+    font-size: 45px;
+    letter-spacing: 0.3em;
+    font-family: 'Orbitron', sans-serif;
 }
