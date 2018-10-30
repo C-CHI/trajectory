@@ -2,7 +2,7 @@ var BIKE = BIKE || {};
 
 BIKE.TRAJECTORY = {};
 
-BIKE.TRAJECTORY.WINDOW_RESIZE = {
+BIKE.TRAJECTORY.MAXHEIGHT_BG = {
     opt : function(){
         this.$window = $(window);
     },
@@ -11,24 +11,26 @@ BIKE.TRAJECTORY.WINDOW_RESIZE = {
         this.opt();
         this.setParamerters();
         this.bindEvent();
-        this.alignKeyvisual();
+        this.extendHeight();
     },
 
     setParamerters : function(){
-        this.$key = $('.keyvisual');
+        this.$contents = $('.jsc-contents-wrapper');
     },
 
-    bindEvent : function(){
-        this.$window.on('resize', this.alignKeyvisual.bind(this));
+    bindEvent(){
+        this.$window.on('resize', this.extendHeight.bind(this));
     },
 
-    alignKeyvisual : function(){
-        if(this.$window.width() <= 2050){
-            this.$key.css({'left': (this.$key.width() - this.$window.width()) / 2 * -1});
-        }
+    extendHeight : function(){
+        var maxHeight = this.$window.height();
+
+        this.$contents.css({
+            'height': maxHeight
+        });
     }
 };
 
 $(window).on('load',function(){
-    BIKE.TRAJECTORY.WINDOW_RESIZE.init();
+    BIKE.TRAJECTORY.MAXHEIGHT_BG.init();
 });
