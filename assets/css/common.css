@@ -57,6 +57,9 @@
 /******************
 共通
 ******************/
+.contents_wrapper {
+    background-color: #000000;
+}
 .font-white {
     color: #FFF;
 }
