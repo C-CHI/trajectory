@@ -6,21 +6,28 @@
 }
 .album-container {
     padding: 60px;
-    padding-top: 108px;
+    padding-top: 148px;
     color: #FFF;
     justify-content: space-between;
 }
 .contents-title {
-    margin-right: 30px;
+    position: fixed;
     font-family: 'Orbitron', sans-serif;
 }
-.preview {
-    width: 800px;
+.image-wrap {
+    padding-left: 250px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    background-color: #000;
 }
-@media(min-width: 1300px){
-    .album-container {
-        width: 51%;
-        margin-left: auto;
-        margin-right: auto;
+.image-wrap > li {
+    margin-bottom: 100px;
+}
+.image-wrap > li:last-child {
+    margin-bottom: 0px;
+}
+@media(min-width: 1500px){
+    .image-wrap > li {
+        margin-bottom: 200px;
     }
 }
