@@ -25,9 +25,11 @@ BIKE.TRAJECTORY.MAXHEIGHT_BG = {
     extendHeight : function(){
         var maxHeight = this.$window.height();
 
-        this.$contents.css({
-            'height': maxHeight
-        });
+        if(this.$contents.height() < maxHeight ){
+            this.$contents.css({
+                'height': maxHeight
+            });
+        }
     }
 };
 
