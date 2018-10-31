@@ -48,7 +48,7 @@
 }
 @media(max-width: 2200px){
     .keyvisual {
-        top: 0;
+        top: -100px;
         bottom: auto;
     }
 }
