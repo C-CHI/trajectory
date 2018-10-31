@@ -43,14 +43,13 @@
 }
 .keyvisual {
     position: absolute;
-    top: 0;
+    bottom: -100px;
     left: 0;
-    overflow: hidden;
 }
-@media(max-width: 2050px){
+@media(max-width: 2200px){
     .keyvisual {
-        /*width: 2050px;
-        height: 100%;*/
+        top: 0;
+        bottom: auto;
     }
 }
 
@@ -58,7 +57,9 @@
 共通
 ******************/
 .contents_wrapper {
+    position: relative;
     background-color: #000000;
+    overflow: hidden;
 }
 .brand {
     font-size: 45px;
