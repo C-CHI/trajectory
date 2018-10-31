@@ -16,4 +16,5 @@
 .content-link > li {
     width: 350px;
     margin-bottom: 30px;
+    opacity: 0;
 }
