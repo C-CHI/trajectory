@@ -16,6 +16,9 @@
     margin-left: 30px;
     font-size: 18px;
 }
+.page-nav > li > a:hover {
+    opacity: 0.8;
+}
 .album-link {
     position: relative;
 }
@@ -28,12 +31,17 @@
     font-size: 14px;
 }
 .album-nav > li {
-    padding: 10px;
     text-align: center;
     border: solid 1px #FFF;
 }
 .album-nav > li > a {
+    padding: 10px;
     display: block;
+    transition: all 500ms 0s ease;
+}
+.album-nav > li > a:hover {
+    background-color: #FFF;
+    color: #000;
 }
 .keyvisual-wrap {
     opacity: 0.8;
